@@ -140,3 +140,8 @@ final cron command is...
 ```bash
 */5 * * * * /Users/codemang/Personal/mint_notifier/main.sh
 ```
+
+## Viewing The Browser
+
+If you want to view the browser as it is being automated, just call the script
+with `VISIBLE_BROWSER=true`
