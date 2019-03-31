@@ -70,7 +70,7 @@ module MintClient
     date = Date.today.strftime('%Y-%m-%d')
     login_codes = []
 
-    Dir["/Users/codemang/Library/Messages/Archive/#{date}/*"].each do |file|
+    Dir["#{ENV['HOME']}/Library/Messages/Archive/#{date}/*"].each do |file|
       encoded_body = File.read(file)
       utf8_body = encoded_body.encode('UTF-8', 'binary', invalid: :replace, undef: :replace, replace: '')
 
