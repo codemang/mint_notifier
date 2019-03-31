@@ -53,10 +53,12 @@ $ bundle i
 ```
 
 3. Install [chromedriver](http://chromedriver.storage.googleapis.com/index.html)
+   and [geckodriver](https://github.com/mozilla/geckodriver/releases)
    and put the executable somewhere in your path. As of the time of this writing
    I'm using version
-   [2.46](https://chromedriver.storage.googleapis.com/index.html?path=2.46/) but
-   you can find the latest version [here](https://chromedriver.storage.googleapis.com/LATEST_RELEASE).
+   [2.46](https://chromedriver.storage.googleapis.com/index.html?path=2.46/) of
+   the chromedriver but you can find the latest version
+   [here](https://chromedriver.storage.googleapis.com/LATEST_RELEASE).
 
 4. Copy the env template and fill it out with your values
 
