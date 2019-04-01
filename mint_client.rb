@@ -50,7 +50,7 @@ module MintClient
 
   def find_transactions_for_dates(session, dates)
     dates.each_with_object({}) do |date, memo|
-      date_with_mint_format = date.strftime('%b %e').upcase
+      date_with_mint_format = date.strftime('%b %-e').upcase
       transactions = []
       session.all("#transaction-list-body .firstdate").each do |block|
         transaction_date = block.find('.date').text
